@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>SpaceX</title>
+</head>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .content {
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+
+    h1,
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+</style>
+
+<body>
+    <div id="nav">
+        <div class="logo">
+            <img src="images/logo1.png" alt="" />
+        </div>
+
+        <div class="nav-text">
+            <ul>
+                <li><a href="index.html" class="page-scroll active">Home</a></li>
+                <li><a href="about.html" class="page-scroll">About Us</a></li>
+                <li><a href="mission.html" class="page-scroll">Mission</a></li>
+                <li><a href="signup.html" class="page-scroll">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Sidenav -->
+    <nav id="sidenav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="mission.html">MISSION</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        </ul>
+    </nav>
+
+    <img src="images/menu1.png" alt="" id="menuBTN">
+    <!-- end Sidenav -->
+
+    <!-- offers -->
+
+
+    <section id="offers">
+        <style>
+            #offers {
+                background-image: url("images/starships.jpg");
+                width: 100%;
+                height: 500px;
+            }
+        </style>
+        <div class="about-left-col">
+            <img src="images/spacex.png" alt="">
+        </div>
+        <div class="about-right-col">
+            <div style="margin-right: 100px;
+            max-width: 500px;" class="about-text">
+                <br>
+                <br>
+                <h1>Mission Completed by <br> SpaceX Technologies</h1>
+                <span class="square"></span>
+                <p>"You want to wake up in the morning and think the future is going to be great - and that's what being
+                    a spacefaring civilization is all about. It's about believing in the future and thinking that the
+                    future will be better than the past. And I can't think of anything more exciting than going out
+                    there and being among the stars.” -Elon Musk
+                </p>
+                <button class="common-btn">See Past Mission</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <style>
+            .content {
+                margin: 80px;
+            }
+        </style>
+        <h2>Missions Completed by SpaceX <i class="fas fa-fighter-jet"></i></h2>
+        <table>
+            <tr>
+                <th>Mission</th>
+                <th>Launch Date</th>
+                <th>Payload</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Falcon 9</td>
+                <td>March 7, 2020</td>
+                <td>Dragon</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Falcon 9</td>
+                <td>January 7, 2020</td>
+                <td>60 Starlink Satellites</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Falcon 9</td>
+                <td>January 29, 2020</td>
+                <td>60 Starlink Satellites</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Falcon 9</td>
+                <td>December 6, 2020</td>
+                <td>Dragon</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Falcon 9</td>
+                <td>February 17, 2021</td>
+                <td>60 Starlink Satellites</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Starlink-25 (v1.5)</td>
+                <td>June 4, 2023</td>
+                <td>60 Starlink Satellites</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>CRS-25</td>
+                <td>May 26, 2023</td>
+                <td>Dragon (Cargo)</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Transporter-4</td>
+                <td>February 21, 2023</td>
+                <td>Various Small Satellites</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                background: linear-gradient(to bottom, #c4c4c4, #000000);
+            }
+
+            .card {
+                display: inline-block;
+                width: 300px;
+                margin: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                background-color: #fff;
+            }
+
+            .card-image {
+                height: 200px;
+                position: relative;
+            }
+
+            .card-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px 5px 0 0;
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover .card-image img {
+                transform: scale(1.1);
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            .card-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .card-details {
+                font-size: 14px;
+                color: #777;
+            }
+
+            .card-details div {
+                margin-bottom: 5px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .container {
+                    align-items: center;
+                }
+            }
+        </style>
+        <div class="card">
+            <style>
+                #card {
+                    background: linear-gradient(to bottom, #c4c4c4, #000000);
+                }
+            </style>
+            <div class="card-image">
+                <img src="images/mission/mission1.jfif" alt="Mission 1">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 1</div>
+                <div class="card-details">
+                    <div>Launch Date: March 7, 2020</div>
+                    <div>Launch Vehicle: Falcon 9</div>
+                    <div>Payload: Dragon</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission2.jpg" alt="Mission 2">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 2</div>
+                <div class="card-details">
+                    <div>Launch Date: January 7, 2020</div>
+                    <div>Launch Vehicle: Falcon 9</div>
+                    <div>Payload: 60 Starlink Satellites</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission3.jpg" alt="Mission 3">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 3</div>
+                <div class="card-details">
+                    <div>Launch Date: January 29, 2020</div>
+                    <div>Launch Vehicle: Falcon 9</div>
+                    <div>Payload: 60 Starlink Satellites</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission4.jpg" alt="Mission 4">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 4</div>
+                <div class="card-details">
+                    <div>Launch Date: December 6, 2020</div>
+                    <div>Launch Vehicle: Falcon 9</div>
+                    <div>Payload: Dragon</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission5.jpg" alt="Mission 5">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 5</div>
+                <div class="card-details">
+                    <div>Launch Date: February 17, 2021</div>
+                    <div>Launch Vehicle: Falcon 9</div>
+                    <div>Payload: 60 Starlink Satellites</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission6.jpg" alt="Mission 5">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 6</div>
+                <div class="card-details">
+                    <div>Launch Date: June 4, 2023</div>
+                    <div>Launch Vehicle: Starlink-25 (v1.5)</div>
+                    <div>Payload: 60 Starlink Satellites</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission7.jpg" alt="Mission 5">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 7</div>
+                <div class="card-details">
+                    <div>Launch Date: May 26, 2023</div>
+                    <div>Launch Vehicle: CRS-25</div>
+                    <div>Payload: Dragon (Cargo)</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="images/mission/mission8.jpg" alt="Mission 5">
+            </div>
+            <div class="card-body">
+                <div class="card-title">Mission 8</div>
+                <div class="card-details">
+                    <div>Launch Date: February 21, 2023</div>
+                    <div>Launch Vehicle: Transporter-4</div>
+                    <div>Payload: Various Small Satellites</div>
+                    <div>Status: Completed</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="slider-container">
+        <div class="slider-track">
+            <img src="images/mission/mission1.jfif" alt="Slide 1">
+            <img src="images/mission/mission2.jpg" alt="Slide 2">
+            <img src="images/mission/mission3.jpg" alt="Slide 3">
+            <img src="images/mission/mission4.jpg" alt="Slide 4">
+            <img src="images/mission/mission5.jpg" alt="Slide 5">
+            <img src="images/mission/mission6.jpg" alt="Slide 6">
+            <img src="images/mission/mission7.jpg" alt="Slide 7">
+            <img src="images/mission/mission8.jpg" alt="Slide 8">
+        </div>
+        <button class="slider-arrow prev" onclick="changeSlide(-1)">&lt;</button>
+        <button class="slider-arrow next" onclick="changeSlide(1)">&gt;</button>
+    </div>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <i class="fab fa-galactic-republic"></i>
+        </div>
+        <div class="footer-title">
+            SpaceX
+        </div>
+        <div class="footer-description">
+            Exploring the Future of Space Travel
+        </div>
+        <div class="footer-links">
+            <a href="https://www.spacex.com/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://twitter.com/SpaceX" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/spacex/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/spacex" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <button id="scrollBtn" onclick="scrollToTop()" title="Scroll to Top"></button>
+    <script>
+        // Get the button element
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        // Show the button when the user scrolls down 20% of the viewport height
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > window.innerHeight * 0.2) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        // Scroll smoothly to the top of the document when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        const menuBtn = document.getElementById("menuBTN");
+        const sideNav = document.getElementById("sidenav");
+        sidenav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "-0";
+                menuBtn.style.transform = 'rotate(180deg)';
+            } else {
+                sidenav.style.right = "-250px";
+                menuBtn.style.transform = 'rotate(0)';
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <script src="script/script.js"></script>
+    <script>
+        var sliderIndex = 0;
+        var sliderTrack = document.querySelector('.slider-track');
+        var slides = document.querySelectorAll('.slider-track img');
+        var slideWidth = slides[0].clientWidth;
+
+        function changeSlide(n) {
+            sliderIndex += n;
+
+            if (sliderIndex < 0) {
+                sliderIndex = slides.length - 1;
+            } else if (sliderIndex >= slides.length) {
+                sliderIndex = 0;
+            }
+
+            sliderTrack.style.transform = `translateX(-${sliderIndex * slideWidth}px)`;
+        }
+    </script>
+</body>
+
+</html>

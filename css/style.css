@@ -510,19 +510,6 @@
           flex-basis: 100%;
       margin-bottom: 20px;
     }
-    #courses .container {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-    #courses .container .course-left-col {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-    }
-    #courses .container .course-right-col {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-      margin-top: 70px;
-    }
     #offers .about-left-col {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
@@ -573,8 +560,6 @@
   
   #nav {
     /* background: linear-gradient(to top, #848484, #092442); */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -582,7 +567,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     -webkit-transition: 0.5s;
@@ -596,8 +581,6 @@
   #nav.nav-active {
     background: #00D7CC;
     z-index: 100;
-    -webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.8);
-            box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.8);
     -webkit-transition: 0.8s;
     transition: 0.8s;
   }
@@ -608,19 +591,12 @@
   
   #nav .nav-text ul {
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   
   #nav .nav-text ul li {
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
-  }
-  
-  #nav .nav-text ul li:hover {
-    -webkit-transform: translateY(-7px);
-            transform: translateY(-7px);
   }
   
   #nav .nav-text ul li:hover a {
@@ -650,6 +626,36 @@
     cursor: pointer;
   }
 
+  @media only screen and (max-width: 600px) {
+    .nav-text {
+        display: none;
+    }
+    
+    .nav-text.active {
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .nav-text ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-text ul li {
+        text-align: center;
+    }
+    
+    .nav-text ul li a {
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+}
+
   #teams {
     width: 100%;
     height: 600px;
@@ -668,10 +674,6 @@
   }
   
   #teams .box {
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     width: 300px;
@@ -682,13 +684,14 @@
     border-radius: 6px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+        align-items: center;
     margin: 20px 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.8);
   }
   
+/* naik */
   #teams .box:hover {
     height: 400px;
   }
@@ -768,7 +771,6 @@
     position: absolute;
     width: 0;
     top: -20px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
     background: linear-gradient(to top, #ffffff, #ffffff);
     height: 50px;
     z-index: 10;
@@ -784,8 +786,6 @@
     border-radius: 6px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
     opacity: 0;
   }
   
@@ -799,10 +799,41 @@
     opacity: 1;
   }
   
-  #teams .box:nth-child(2) {
+  /* #teams .box:nth-child(2) {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
+  } */
+
+  /* #teams {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+  
+  .box {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .imgbox img {
+    width: 100%;
+  }
+  
+  .content {
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  span {
+    font-size: 14px;
+    color: #888;
+  } */
+  
 
   #skills .header-skills {
     background-size: cover;

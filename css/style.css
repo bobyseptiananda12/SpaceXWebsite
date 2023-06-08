@@ -874,14 +874,14 @@
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 50%;
     outline: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 36px;
     cursor: pointer;
-    opacity: 2;
+    opacity: 1;
     transition: opacity 0.3s;
   }
 

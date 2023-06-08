@@ -21,10 +21,10 @@
 
             <div class="nav-text">
                 <ul>
-                    <li><a href="index.html" class="page-scroll active">Home</a></li>
-                    <li><a href="about.html" class="page-scroll">About Us</a></li>
-                    <li><a href="mission.html" class="page-scroll">Mission</a></li>
-                    <li><a href="signup.html" class="page-scroll">Sign Up</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
                 </ul>
             </div>
 
@@ -44,7 +44,8 @@
                 <p>Embark on an Extraordinary Journey with SpaceX! Sign Up Now to Explore the Universe and Join the
                     Space Revolution. Don't Miss Out on Exclusive Updates, News, and Opportunities. Dare to Reach for
                     the Stars. Join Us Today!</p>
-                <button class="common-btn" onclick="window.location.href = '#contact'">Sign Up Here</button>
+                    <!-- inline javascript -->
+                <button class="common-btn" onclick="alert('Kamu akan diarahkan ke customer service')">Sign Up Here</button>
                 <div class="line">
                     <span class="line-1"></span><br>
                     <span class="line-2"></span><br>
@@ -118,6 +119,29 @@
             <a href="https://www.youtube.com/spacex" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
+
+    <button id="scrollBtn" onclick="scrollToTop()" title="Scroll to Top"></button>
+    <script>
+        // Get the button element
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        // Show the button when the user scrolls down 20% of the viewport height
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > window.innerHeight * 0.2) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        // Scroll smoothly to the top of the document when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
